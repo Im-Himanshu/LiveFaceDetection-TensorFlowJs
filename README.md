@@ -1,12 +1,27 @@
 Live Demo :
 
 
-
+Github Pages usage summary : 
 Conclusion of the below summary is this :
     1. If any file is referred for the base directory use the URL without leading / just like "script.js" will do --> "./script.js" won't work.
     2. While for the path that are inside the application have to give url as ./folder/fileName will do like "./models/filename"
     3. if this <base href="/"> is used then, all the current directory have to give the repoName like I have used in DemoForStaticSite:
             "DemoForStaticSite/polyfills-es2015.js" so basically routing will start from .github.io --> (start from here)-->repoName--> fileName
+     4. if <base href="/DemoForStaticSite"> : will never work -- have to change the href in base url
+	these will work :
+		<script src="/DemoForStaticSite/polyfills-es5.js" nomodule></script>
+	these won't work :
+        <script src="/main-es5.js" nomodule></script>  -- will go to the route-folder as the leading / means root folder		
+		<script src="styles-es2015.js" type="module"></script> --> will go to this -->  https://imhimanshoe.github.io/styles-es2015.js  
+		<script src="./polyfills-es2015.js" type="module"></script>  because now the folder will go to https://imhimanshoe.github.io/polyfills-es2015.js n
+        5. if <base href="/DemoForStaticSite/"> :
+        will work :
+            <script src="main-es5.js" nomodule></script>  --> best case scenario
+        
+Some Intution :
+1. leading "/" means will go to the root folder.
+2. root starting without any thing will take relative path from <base href="/DemoForStaticSite/">
+    so src="main-es5.js" this will work
 
 
 For Git hubPages to work in this : DO this 
