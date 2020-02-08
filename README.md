@@ -1,3 +1,12 @@
+Live Demo :
+
+
+
+Conclusion of the below summary is this :
+    1. If any file is referred for the base directory use the URL without leading / just like "script.js" will do --> "./script.js" won't work.
+    2. While for the path that are inside the application have to give url as ./folder/fileName will do like "./models/filename"
+
+
 For Git hubPages to work in this : DO this 
 The exact problem with github pages in including the sub folder is this 
 1. if the content is in the current directory as is the case with script.js and face-api.js then relative linking only will work like this 
