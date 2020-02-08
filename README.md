@@ -5,6 +5,8 @@ Live Demo :
 Conclusion of the below summary is this :
     1. If any file is referred for the base directory use the URL without leading / just like "script.js" will do --> "./script.js" won't work.
     2. While for the path that are inside the application have to give url as ./folder/fileName will do like "./models/filename"
+    3. if this <base href="/"> is used then, all the current directory have to give the repoName like I have used in DemoForStaticSite:
+            "DemoForStaticSite/polyfills-es2015.js" so basically routing will start from .github.io --> (start from here)-->repoName--> fileName
 
 
 For Git hubPages to work in this : DO this 
