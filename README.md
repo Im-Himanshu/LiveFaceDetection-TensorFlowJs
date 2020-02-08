@@ -17,6 +17,11 @@ The exact problem with github pages in including the sub folder is this
   
   the complete thread of problem is given here 
   https://stackoverflow.com/questions/16316311/github-pages-and-relative-paths
+  
+  
+  Final solution is do a ./Subfolder-here 
+  above answer are from older version of github now it has been updated so it should work fine with our
+  ./subfolder structure ---> make sure there is no leading / in the structure like ./model/filename.js/ -- wrong
     
     
     
